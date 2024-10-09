@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: user-ms
+server:
+  servlet:
+    contextPath: user-ms
+user:
+  deletion:
+    days: ${USER_DELETION_DAY:120}
+    cron: ${USER_DELETION_CRON:1 * * * * ?}

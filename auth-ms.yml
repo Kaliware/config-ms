@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: auth-ms    
+server:
+  servlet:
+    contextPath: auth-ms
+jwt:
+  expiration:
+    accessToken: ${JWT_EXPIRATION_ACESSTOKEN:6000}
+    refreshToken: ${JWT_EXPIRATION_REFRESHTOKEN:86400}
+  private:
+    key: ${JWT_PRIVATE_KEY}

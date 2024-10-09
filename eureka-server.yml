@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: eureka-server
+eureka:
+  client:
+    register-with-eureka: false 
+    fetch-registry: false
+  server:
+    wait-time-in-ms-when-sync-empty: ${EUREKA_SERVER_WAIT_TIME:0}  
+    enable-self-preservation: ${EUREKA_SERVER_ENABLE_SELF_PRESERVATION:false} 
+    eviction-interval-timer-in-ms: ${EUREKA_SERVER_EVICTION_INTERVAL:5000}
