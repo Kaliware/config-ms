@@ -3,7 +3,7 @@ spring:
     name: auth-ms    
 server:
   servlet:
-    contextPath: auth-ms
+    contextPath: /auth-ms
 jwt:
   expiration:
     accessToken: ${JWT_EXPIRATION_ACESSTOKEN:6000}

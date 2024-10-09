@@ -3,7 +3,7 @@ spring:
     name: user-ms
 server:
   servlet:
-    contextPath: user-ms
+    contextPath: /user-ms
 user:
   deletion:
     days: ${USER_DELETION_DAY:120}
