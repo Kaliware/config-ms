@@ -5,7 +5,7 @@ spring:
     gateway:
       routes:
         - id: auth-service
-          uri: lb://auth-ms  # Nome correto do auth-service registrado no Eureka
+          uri: lb://AUTH-MS  # Nome correto do serviço no Eureka
           predicates:
             - Path=/auth-ms/**  # Roteia todas as requisições que começam com /auth-ms
 server:
