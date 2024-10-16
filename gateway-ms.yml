@@ -3,8 +3,7 @@ spring:
     name: gateway-ms
   cloud:
     gateway:
-      routes:
-        - id: auth-ms
-          uri: lb://auth-ms
-          predicates:
-            - Path=/auth-ms/** 
+      discovery:
+        locator:
+          enabled: true  # Habilita a descoberta automática de serviços via Eureka
+          lower-case-service-id: true  # Garante que os nomes dos serviços sejam tratados em minúsculas
