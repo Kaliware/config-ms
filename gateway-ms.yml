@@ -10,4 +10,4 @@ spring:
             - Path=/auth-ms/**  # Roteia todas as requisições que começam com /auth-ms
 server:
   servlet:
-    contextPath: /user-ms
+    contextPath: /gateway
