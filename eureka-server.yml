@@ -3,8 +3,8 @@ spring:
     name: eureka-server
 eureka:
   client:
-    register-with-eureka: false 
-    fetch-registry: false
+    register-with-eureka: ${EUREKA_SERVER_REGISTER_WITH_EUREKA:false}
+    fetch-registry: ${EUREKA_SERVER_FETCH_REGISTRY:false}
   server:
     wait-time-in-ms-when-sync-empty: ${EUREKA_SERVER_WAIT_TIME:0}  
     enable-self-preservation: ${EUREKA_SERVER_ENABLE_SELF_PRESERVATION:false} 
